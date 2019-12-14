@@ -75,6 +75,12 @@ const showResult = () => {
 
   document.getElementById("restartGame").onclick = () =>
     window.location.reload();
+
+  if (WIN) {
+    new Audio("assets/win.mp3").play();
+  } else {
+    new Audio("assets/lose.mp3").play();
+  }
 };
 
 const generateBeer = async () => {
@@ -108,8 +114,9 @@ const generateBeer = async () => {
 
         if (SCORE % 2 === 0) {
           goneBlock();
+          new Audio("assets/hit.mp3").play();
 
-          if (VELOCITY + 0.1 < 3.8) {
+          if (VELOCITY + 0.1 < 4.0) {
             VELOCITY += 0.1;
           }
 
