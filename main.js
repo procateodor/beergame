@@ -106,10 +106,6 @@ const generateBeer = async () => {
         SCORE++;
         SCORE_ITEM.innerText = SCORE;
 
-        if (SCORE > 1) {
-          WIN = true;
-        }
-
         if (SCORE % 2 === 0) {
           goneBlock();
 
