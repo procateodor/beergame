@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+}
+
+#loading {
+  height: 100vh;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: whitesmoke;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#result {
+  height: 100vh;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: whitesmoke;
+  z-index: 9999;
+}
+
+#startGame {
+  padding: 10px 20px;
+  display: none;
+}
+
+#startGame:hover {
+  cursor: pointer;
+}
+
+#gameContainer {
+  height: 100vh;
+  width: 100%;
+  max-width: 700px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  margin: 0 auto;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: auto auto auto auto;
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  height: calc(100vh / 8 - 2);
+  background-color: red;
+  border: 2px solid pink;
+}
+
+.item-gone {
+  background: transparent !important;
+  height: calc(100vh / 8 - 2);
+  border: 2px solid pink;
+}
+
+#beer {
+  position: absolute;
+  height: calc(100vh / 8 + 4%);
+  background-image: url("/images/beer.svg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999999;
+  bottom: 0;
+  width: calc(100% / 4);
+}
+
+#beer:hover {
+  cursor: pointer;
+}
+
+.sticlaContainer {
+  position: absolute;
+  height: calc(100% / 8);
+  display: flex;
+  width: calc(100% / 4);
+  align-items: center;
+  justify-content: center;
+}
+
+.sticla {
+  height: 100%;
+}
+
+#score {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3em;
+  font-weight: 700;
+  color: white;
+  z-index: 99999999;
+}
+
+#restartGame,
+#startGame {
+  font-size: 0.9em;
+  color: black;
+  background: whitesmoke;
+  padding: 5px 10px;
+}
+
+.arrow {
+  position: absolute;
+  height: calc(100vh / 8);
+  background-image: url("/images/arrow.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 99999999;
+  bottom: 0;
+  width: calc(100% / 4);
+  display: none;
+}
+
+#arrow-left {
+  transform: rotate(-180deg);
+  left: 0;
+}
+
+#arrow-right {
+  right: 0;
+}
