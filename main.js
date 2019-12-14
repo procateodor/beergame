@@ -195,7 +195,7 @@ window.onload = async () => {
 
   loadingMsg.innerText = "loading image";
   await delay(250);
-  GAME.style.backgroundImage = `url("images/${randomIntFromInterval(
+  GAME.style.backgroundImage = `url("assets/${randomIntFromInterval(
     0,
     10
   )}.jpg")`;

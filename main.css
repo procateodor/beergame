@@ -79,7 +79,7 @@ body {
 #beer {
   position: absolute;
   height: calc(100vh / 8 + 4%);
-  background-image: url("../images/beer.svg");
+  background-image: url("assets/beer.svg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -126,7 +126,7 @@ body {
 .arrow {
   position: absolute;
   height: calc(100vh / 8);
-  background-image: url("images/arrow.svg");
+  background-image: url("assets/arrow.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
