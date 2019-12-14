@@ -84,7 +84,7 @@ const generateBeer = async () => {
 
   const beer = document.createElement("img");
   beer.className = "sticla";
-  beer.src = "/images/beer.png";
+  beer.src = "assets/beer.png";
 
   const bearPosition = randomIntFromInterval(0, 3);
 
