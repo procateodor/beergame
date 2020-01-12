@@ -200,7 +200,7 @@ window.onload = async () => {
   await delay(250);
   GAME.style.backgroundImage = `url("assets/${randomIntFromInterval(
     0,
-    10
+    6
   )}.jpg")`;
 
   loadingMsg.innerText = "loading beer";
